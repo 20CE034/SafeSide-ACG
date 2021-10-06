@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<head>
+  <title id="changetitle">Merit Information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="secscript.css">
+    <link rel="icon" href="../Images/tabimg.png">
+
+    </head>
+    
+    <body class="font2">    
+
+    <div class="header nore" >
+     
+        <abbr title="ACPC Councelling Guide"><h4 class="font1 tdtext" style="text-align: center;">ACG </h4></abbr>
+        
+        
+        <p class="font1 date" style="color:white;">Date -<span id='date'></span></p>
+        <script>
+         n =  new Date();
+         y = n.getFullYear();
+         m = n.getMonth() + 1;
+         d = n.getDate();
+         document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+         </script>
+
+    </div>
+
+
+    <div id = "box1">
+
+      
+        <div id ="leftbox" class="nore">
+         <abbr title="Welcome to ACG! Please Enter your Merit Information"> <h2 style="font-size:40px; text-align: left; margin-top:0px; margin-left: 5px;" class="font2 loginsign">MERIT Information</h2></abbr>
+          <div class="background1">
+            <div class="transparentbox">
+              
+              <div class="custom-checkbox">
+                <div class="checkmark"></div>
+              </div>
+              <strong style="margin-left: 20px; margin-top: -20px;" class="font2">RANKS</strong>
+               <input id="how-other" name="how" type="checkbox" checked="checked">
+              <label style="margin-left: 20px;font-weight: bold;"  for="how-other" class="side-label font3">Enter your GUJCET Rank</label>
+              <div class="how-other-disclosure">
+                <label for="how-other-explain" class="top-label">(ACPC)</label>
+                <input id="stdin" type="text" class="inputstyle font1"></input>
+              </div>
+              <!-- 
+<input type="text" id="stdin"/>
+<p id="credits"></p>
+<form id="form">
+  <button id="run">Enter Rank</button>
+</form>
+<code id="output"></code> -->
+
+    
+              <input id="how-other1" name="how" type="checkbox" >
+              <label style="margin-left: 20px;font-weight: bold;"   for="how-other1" class="side-label1 font3">Enter your JEE Rank</label>
+              <div class="how-other-disclosure1">
+                <label for="how-other-explain1" class="top-label">(ACPC)</label>
+                <input id="how-other-explain1" class="inputstyle font1"></input>
+              </div>
+              <br>
+              <h2 style="margin-left: 20px;"  class="font2" checked="checked">MARKS</h2>
+              <input id="how-other2" name="how" type="checkbox">
+              <label style="margin-left: 20px;font-weight: bold;" for="how-other2" class="side-label2 font3">Enter your 12th Marks</label>
+              <div class="how-other-disclosure2">
+                <label for="how-other-explain2" class="top-label">(PCB/PCM-GUJ. Board)</label>
+                <input id="how-other-explain2" class="inputstyle font1"></input>
+              </div>
+
+            </div>
+          </div>
+        
+        </div> 
+          
+        <div id="rightbox" class="nore">
+          <strong style="margin-left:20px; font-size:40px;" class="font2 loginsign">Select Branch</strong>
+          <div class="background2">
+            <div class="transparentbox1">
+              <div style="margin-left:20px;">
+
+              <form style="margin-left: 20px;">
+                <a style="color:brown;">Select any 1 branch of your choice</a>
+                <br>
+                <br>
+                <input id="CE" type="radio" class="brb" name = "field" value="CE"> CE </br>
+                <input id="IT" type="radio" class="brb" name = "field" value="IT"> IT </br>
+                <input id="CS" type="radio" class="brb" name = "field" value="CS"> CS </br>
+                
+                <!-- <input id="CE" type="radio" class="brb" name = "field" value="IC"> IC </br>
+                <input id="ME" type="radio" class="brb" name = "field" value="ME"> ME </br>
+                <input id="Civil" type="radio" class="brb" name = "field" value="Civil"> Civil </br>
+                <input id="Chemical" type="radio" class="brb" name = "field" value="Chemical"> Chemical</br>
+                <input id="EE" type="radio" class="brb" name = "field" value="EE"> EE </br>
+                <input id="Environment" type="radio" class="brb" name = "field" value="Environment"> Environment </br>
+                <input id="Auto" type="radio" class="brb" name = "field" value="Auto"> Auto </br>
+                <input id="FC" type="radio" class="brb" name = "field" value="FC"> FC </br>
+                <input id="AI" type="radio" class="brb" name = "field" value="AI"> AI </br>
+                <input id="Aero" type="radio" class="brb" name = "field" value="Aero">Aero </br>
+                <input id="Mechatronics" type="radio" class="brb" name = "field" value="Mechatronics"> Mechatronics </br> -->
+                
+                
+
+                </form></div>
+                <br>
+                <br>
+                <br>
+                <br>
+
+                <form id="form">
+                  <button class="btn" onclick="submitclicked()" id="run">Find</button>
+                </form>
+          
+                <!-- <abbr title="Check Results"><div class="btn" onclick="submitclicked()">Find</div></abbr> -->
+
+              </div>
+              
+              </div>
+              
+            </div>  
+    </div>
+
+    <!-- Result page will be displayed -->       
+
+
+
+    <div id = "box2">
+
+      <div id = "leftbox2" class="nore" >
+        <a class="font1" style="font-size: 50px; color:rgb(240, 196, 145);"> <span class="backbtn" onclick="backtosecpage()"> &#9664;</span>  Showing Results for <p class="font1" id="branchchange" ></p> Branch</a>
+        <div id="print-content">
+          <code id="output">
+        <table id="output" class="tg font1 gredient" style="color:white; margin-left: 50px; margin-top: 50px;">
+          <thead>
+            <tr style="color:black;">
+              <th class="tg-0pky">Sr. No</th>
+              <th class="tg-0pky">College </th>
+              <th class="tg-0pky">Closing Rank 20-21</th>
+              <th class="tg-0pky">Closing Rank 19-20</th>
+              <th class="tg-0pky">Reviews</th>
+              <th class="tg-0pky"><abbr title="Location"><i style="margin-left: 50px;margin-right: 50px;" class="material-icons">&#xe55f;</i></abbr></th>
+              <th class="tg-0pky"><abbr title="Description"><i style="margin-left: 50px;margin-right: 50px;" class="material-icons">&#xe88e;</i></abbr></th>
+            </tr>
+          </thead>
+          <tbody class="bold" style="text-decoration: none;color:black;">
+            <!-- <tr>
+              <td class="tg-0pky">1</td>
+              <td class="tg-0pky"><a style="text-decoration: none;color:rgb(236, 166, 74);" href="https://www.msubaroda.ac.in/">MSU</a></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"><a style="text-decoration: none;color:rgb(3, 3, 3);" href="https://www.google.com/maps/dir//daiict/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x395c2a3c9618d2c5:0xc54de484f986b1fa?sa=X&ved=2ahUKEwj56pz66YLzAhUbfX0KHSmEArQQ9Rd6BAhQEAU">Gandhinagar</a></td>
+              <td class="tg-0pky"></td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">2</td>
+              <td class="tg-0pky"><a style="text-decoration: none;color:rgb(236, 166, 74);" href="https://www.daiict.ac.in/">DAIICT</a></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+              <td class="tg-0pky"></td>
+            </tr> -->
+          </tbody>
+          </table>
+        </code> 
+        <div style="margin-top:20px; margin-left:20px;">
+          
+          <!-- <input type="button" onclick="printDiv('print-content')" value="Print My Results"/>(this will print results only) -->
+          <abbr title="(this will print results only)"><button type="button" onclick="printDiv('print-content')" class="printbutton font1" ><i style="font-size: 40px; align-content: center;" class="material-icons">&#xe8ad;</i></button></abbr>
+        </div>
+    </div>
+  </div>
+    </div>
+    
+    <footer style="color:white;" class="clearfix">
+      <adress class="font1">Office No 4, Chandivali Farms, Sub Survey-1, Sakinaka, ABCD Area (e)
+        City	Ahmedabad
+        Gujarat<br>Write an email us at <a href="mailto:abc@xyz.com" style="color:sandybrown; text-decoration: none;">Email</a><br>
+      In case of any help please contact during 10 a.m. to 6 p.m. at <i class="material-icons">&#xe551;</i> <a href="tel:0123456789" class="font1" target = "_blank" style="color:sandybrown">Call +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
+    </footer> 
+</body>
+<script src="secjs.js"></script>
+<script src="Thirdjava.js"></script>
+<script src="apisec.js"></script>
+</html>
+
