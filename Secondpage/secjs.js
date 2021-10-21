@@ -42,9 +42,9 @@ function submitclicked()
         
     }
 
-    else if(selectedbranch="CE")
+    else if(selectedbranch="Civil")
     {
-        selectedCE(rank)
+        selectedCivil(rank)
     }
 
     else if(selectedbranch=="CS")
@@ -78,15 +78,15 @@ function selectedIT(rank)
     // }
 }
 
-function selectedCE(rank)
+function selectedCivil(rank)
 {
-    // console.log("CE "+rank)
+    console.log("Civil"+rank)
 
 }
 
 function selectedCS(rank)
 {
-    // console.log("CS"+rank)
+    console.log("CS"+rank)
 
 }
 

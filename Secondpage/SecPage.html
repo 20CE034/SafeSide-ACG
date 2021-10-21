@@ -38,20 +38,21 @@
                 <div class="checkmark"></div>
               </div>
               <strong style="margin-left: 20px; margin-top: -20px;" class="font2">RANKS</strong>
+
                <input id="how-other" name="how" type="checkbox" checked="checked">
               <label style="margin-left: 20px;font-weight: bold;"  for="how-other" class="side-label font3">Enter your GUJCET Rank</label>
               <div class="how-other-disclosure">
                 <label for="how-other-explain" class="top-label">(ACPC)</label>
-                <input id="stdin" type="text" class="inputstyle font1"></input>
+                <input id="stdin" type="text" class="inputstyle font1" required></input>
               </div>
     
-              <!-- <input id="how-other1" name="how" type="checkbox" >
+              <input id="how-other1" name="how" type="checkbox" >
               <label style="margin-left: 20px;font-weight: bold;"   for="how-other1" class="side-label1 font3">Enter your JEE Rank</label>
               <div class="how-other-disclosure1">
                 <label for="how-other-explain1" class="top-label">(ACPC)</label>
-                <input id="how-other-explain1" class="inputstyle font1"></input>
+                <input id="stdin2" type="text" class="inputstyle font1" required></input>
               </div>
-              <br>
+              <!-- <br>
               <h2 style="margin-left: 20px;"  class="font2" checked="checked">MARKS</h2>
               <input id="how-other2" name="how" type="checkbox">
               <label style="margin-left: 20px;font-weight: bold;" for="how-other2" class="side-label2 font3">Enter your 12th Marks</label>
@@ -71,37 +72,35 @@
             <div class="transparentbox1">
               <div style="margin-left:20px;">
 
-              <form style="margin-left: 20px;">
+              <form id="form" style="margin-left: 20px;">
                 <a style="color:brown;">Select any 1 branch of your choice</a>
                 <br>
                 <br>
-                <input id="CE" type="radio" class="brb" name = "field" value="CE"> CE </br>
-                <input id="IT" type="radio" class="brb" name = "field" value="IT"> IT </br>
+                <input id="Civil" type="radio" class="brb" name = "field" value="Civil" > Civil </br>
+                <input id="IT" type="radio" class="brb" name = "field" value="IT" > IT </br>
                 <input id="CS" type="radio" class="brb" name = "field" value="CS"> CS </br>
-                
-                <!-- <input id="CE" type="radio" class="brb" name = "field" value="IC"> IC </br>
-                <input id="ME" type="radio" class="brb" name = "field" value="ME"> ME </br>
-                <input id="Civil" type="radio" class="brb" name = "field" value="Civil"> Civil </br>
-                <input id="Chemical" type="radio" class="brb" name = "field" value="Chemical"> Chemical</br>
                 <input id="EE" type="radio" class="brb" name = "field" value="EE"> EE </br>
+                <br>
+                (in testing)
+                <br>
+                <input id="ME" type="radio" class="brb" name = "field" value="ME"> ME </br>
                 <input id="Environment" type="radio" class="brb" name = "field" value="Environment"> Environment </br>
+                <input id="Chemical" type="radio" class="brb" name = "field" value="Chemical"> Chemical</br>
                 <input id="Auto" type="radio" class="brb" name = "field" value="Auto"> Auto </br>
                 <input id="FC" type="radio" class="brb" name = "field" value="FC"> FC </br>
                 <input id="AI" type="radio" class="brb" name = "field" value="AI"> AI </br>
                 <input id="Aero" type="radio" class="brb" name = "field" value="Aero">Aero </br>
-                <input id="Mechatronics" type="radio" class="brb" name = "field" value="Mechatronics"> Mechatronics </br> -->
-                
-                
+                <input id="Mechatronics" type="radio" class="brb" name = "field" value="Mechatronics"> Mechatronics </br>
 
+                <br>
+                  <button class="btn font1" onclick="submitclicked()" id="run">Find</button>
                 </form></div>
                 <br>
                 <br>
                 <br>
                 <br>
                 
-                <form id="form">
-                  <button class="btn font1" onclick="submitclicked()" id="run">Find</button>
-                </form>
+                
                 <!-- <abbr title="Check Results"><div class="btn" onclick="submitclicked()">Find</div></abbr> -->
 
               </div>
@@ -122,9 +121,11 @@
         <div id="print-content">
 
           <code style="font-size: 30px;color:azure" id="output"></code>
+          <br>
+          <code style="font-size: 30px;color:azure" id="output2"></code>
         <table id="displayresult" class="tg font1 gredient" style="color:white; margin-left: 50px; margin-top: 50px;">
           <thead>
-            <tr style="color:black;">
+            <!-- <tr style="color:black;">
               <th class="tg-0pky">Sr. No</th>
               <th class="tg-0pky">College </th>
               <th class="tg-0pky">Closing Rank 20-21</th>
@@ -132,7 +133,7 @@
               <th class="tg-0pky">Reviews</th>
               <th class="tg-0pky"><abbr title="Location"><i style="margin-left: 50px;margin-right: 50px;" class="material-icons">&#xe55f;</i></abbr></th>
               <th class="tg-0pky"><abbr title="Description"><i style="margin-left: 50px;margin-right: 50px;" class="material-icons">&#xe88e;</i></abbr></th>
-            </tr>
+            </tr> -->
           </thead>
           <tbody class="bold" style="text-decoration: none;color:black;">
             <!-- <tr>
@@ -155,11 +156,16 @@
             </tr> -->
           </tbody>
           </table>
-         
+          <a class="font1" style="color: rgb(21, 189, 255);" href="../Feedbackto/Feedback.html" target="_blank">We want to hear from you!&#128077;</a>
         <div style="margin-top:20px; margin-left:20px;">
           
           <!-- <input type="button" onclick="printDiv('print-content')" value="Print My Results"/>(this will print results only) -->
           <abbr title="(this will print results only)"><button type="button" onclick="printDiv('print-content')" class="printbutton font1" ><i style="font-size: 40px; align-content: center;" class="material-icons">&#xe8ad;</i></button></abbr>
+        <!-- Feedback Stuff -->
+        <div>
+          
+
+        </div>
         </div>
     </div>
   </div>
@@ -172,14 +178,14 @@
         City	Ahmedabad
         Gujarat<br>Write an email us at <a href="mailto:abc@xyz.com" style="color:sandybrown; text-decoration: none;">Email</a><br>
       In case of any help please contact during 10 a.m. to 6 p.m. at <i class="material-icons">&#xe551;</i> <a href="tel:0123456789" class="font1" target = "_blank" style="color:sandybrown">Call +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
-      <br>Visitors:
-      <p id="CounterVisitor">
-        <span class="counter-item">0</span>  
+      <br>
+      <p class="font1">
+        <a target="_blank" style="color: rgb(223, 124, 124);text-decoration: none;" href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error</a>  
       </p>
     </footer> 
 </body>
 <script src="secjs.js"></script>
 <script src="Thirdjava.js"></script>
-<script src="apisec.js"></script>
-
+<script src="GUJCET.js"></script>
+<script src="JEE.js"></script>
 </html>
