@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+  <title id="changetitle">Learn More</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="howtocss.css">
+  <link rel="icon" href="../Images/tabimg.png">
+</head>
+<body class="font2">
+  <div class="header nore">
+    <abbr title="ACPC Councelling Guide">
+      <h4 class="font1 tdtext" style="text-align: center;">ACG </h4>
+    </abbr>
+    
+    <p class="font1 date" style="color:white;">Date -<span id='date'></span></p>
+  &#128161;
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+    <br>
+    
+  </div>
+   
+  <div id="box1">
+    <div id="leftbox" class="nore">
+      <!-- dont write anything here -->
+    </div>
+    <div id="rightbox" class="nore">
+      <a style="color: skyblue; font-size: 30px;text-decoration: none;" class="backbtn" href="../Secondpage/SecPage.html"> &#9664;</a>
+      <h2 style="font-size:40px; text-align: left; margin-top:0px; margin-left: 5px;" class="font2 loginsign">Dealing With Rank</h2>
+      <br>
+      <a >1  ) </a>
+      <button class="btn font1" style="color: goldenrod;" onclick=submitclicked()>ong</button>
+    </div>
+  </div>
+
+  <div id="box2">
+    <div id="leftbox" class="nore">
+      <!-- dont write anything here -->
+    </div>
+    <div id="rightbox" class="nore">
+      <div id="box2"><span class="backbtn" onclick="backtosecpage2()"> &#9664;</span></div>
+      <h2 style="font-size:40px; text-align: left; margin-top:0px; margin-left: 5px;" class="font2 loginsign">Example Code</h2>
+      <p style="color: darkorange">We have an interger named rank to help us fetch results. which is entered by you.</p>
+      <pre class="font1"><code>
+            int rank;
+            Scanner sc = new Scanner(System.in);
+            console.log(stores rank in console);
+          </code></pre>
+          <p style="color: darkorange">Input box takes a variable(java script) and assigns value to rank variable(in java). </p>
+          <pre class="font1"><code>
+            rank = sc.nextInt();
+            console.log(branch.name);
+          </code></pre>
+          <p style="color: darkorange">Filters best suitable colleges less than 5 seconds. Prints it.(Additionally print button is added you can print it and save a hard copy.)</p>
+          <pre class="font1" style="color: grey;"><code>
+            if(rank<=54){
+              System.out.println("DAAICT");
+            }
+            ...
+          </code></pre>
+          <p style="color: darkorange">Some Colleges will always be printed. Vacant seats colleges are printed for rank less than 70000</p>
+          <pre class="font1" style="color: white;"><code>
+            if(rank<=70000){
+            System.out.println(" Alpha kalol");
+            System.out.println("Aditya Birla University");
+            System.out.println(" APPOLO Abad");
+            System.out.println(" Atmiya Rajkot");
+            System.out.println(" Ganpat University");
+            System.out.println(" Gyanmanjri Bhavnagar");
+            }
+            </code></pre>
+            <p style="color: darkorange">Entering a invalid char will end up in "Loading..." freeze moment. </p>
+            <pre class="font1" style="color: grey"><code>
+            else{
+              System.out.println("Can not fetch output , Enter valid input.");
+            }
+        </code></pre>
+
+    </div>
+  </div>
+  <!-- Result page will be displayed -->
+  <footer style="color:white;" class="clearfix">
+    <adress class="font1">Office No 4, Chandivali Farms, Sub Survey-1, Sakinaka, ABCD Area (e)
+      City Ahmedabad
+      Gujarat<br>Write an email us at <a href="mailto:abc@xyz.com"
+        style="color:sandybrown; text-decoration: none;">Email</a><br>
+      In case of any help please contact during 10 a.m. to 6 p.m. at <i class="material-icons">&#xe551;</i> <a
+        href="tel:0123456789" class="font1" target="_blank" style="color:sandybrown">Call
+        +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
+      <br>
+      <p class="font1">
+        <a target="_blank" style="color: rgb(223, 124, 124);text-decoration: none;"
+          href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error</a>
+      </p>
+  </footer>
+</body>
+<script src="howtojs.js"></script>
+<!-- <script src="Thirdjava.js"></script>
+<script src="GUJCET.js"></script> -->
+<!-- <script src="JEE.js"></script> -->
+</html>
