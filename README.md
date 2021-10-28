@@ -1,4 +1,4 @@
-![Logo](https://cdn.discordapp.com/attachments/794818958686552145/902015783801090048/logo_git.png)
+![Logo](https://cdn.discordapp.com/attachments/794818958686552145/903132306078859274/1635393906112.png)
 
 # SafeSide-Clone
 ACG Safe Side project clone (in Testing)
