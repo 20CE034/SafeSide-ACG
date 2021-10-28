@@ -41,11 +41,12 @@
             <input id="stdin" type="text" class="inputstyle font1" required></input>
           </div>
           <input id="how-other1" name="how" type="checkbox">
+          <p>In Testing</p>
           <label style="margin-left: 20px;font-weight: bold;" for="how-other1" class="side-label1 font3">Enter your JEE
             Rank</label>
           <div class="how-other-disclosure1">
             <label for="how-other-explain1" class="top-label">(ACPC)</label>
-            <input id="stdin2" type="text" class="inputstyle font1" required></input>
+            <input id="jee" type="text" class="inputstyle font1" ></input>
           </div>
           <br>
           <h2 style="margin-left: 20px;" class="font2">MARKS</h2>
@@ -74,7 +75,7 @@
               <input id="EE" type="radio" class="brb" name="field" value="EE"> EE </br>
               <input id="ECE" type="radio" class="brb" name="field" value="ECE"> ECE </br>
               <input id="Chemical" type="radio" class="brb" name="field" value="Chemical"> Chemical</br>
-              <input id="Environment" type="radio" class="brb" name="field" value="Environment"> Environment </br>
+              <!-- <input id="Environment" type="radio" class="brb" name="field" value="Environment"> Environment </br> -->
               <input id="ME" type="radio" class="brb" name="field" value="ME"> ME </br>
               <br>
               <br>
@@ -85,8 +86,14 @@
                 <input id="Aero" type="radio" class="brb" name = "field" value="Aero">Aero </br>
                 <input id="Mechatronics" type="radio" class="brb" name = "field" value="Mechatronics"> Mechatronics </br> -->
               <br>
-              <button class="btn font1" onclick="submitclicked()" id="run">Find</button>
+              <button class="btn font1" onclick="submitclicked()" id="run">Find(GUJCET)</button>
+              <br>
+              
+             
             </form>
+            <!-- <input type="submit" class="yellow" value="Get sum" onclick="jeeo()"><br> -->
+            <button class="btn font1" onclick="jeeo()">Find (JEE)</button>
+            <button class="btn font1" onclick="boardo()">Find (Board)</button>
           </div>
           <br>
           <br>
@@ -107,7 +114,7 @@
       <div id="print-content">
         <code style="font-size: 30px;color:azure" id="output"></code>
         <br>
-        <code style="font-size: 30px;color:azure" id="output2"></code>
+        
         <table id="displayresult" class="tg font1 gredient" style="color:white; margin-left: 50px; margin-top: 50px;">
           <thead>
             <!-- <tr style="color:black;">
@@ -156,12 +163,20 @@
     </div>
   </div>
   <div class="int transbox">
+    <p>JEE/Board Result to appear (if selected)</p>
+    <a style="font-size: 30px;color:azure" id="titlejee"></a>
+    <a style="font-size: 30px;color:azure" id="titleboard"></a>
+    <code style="font-size: 30px;color:rgb(241, 9, 9)" id="outputjee"></code>
+    <code style="font-size: 30px;color:rgb(241, 9, 9)" id="outputboard"></code>
+    <br>
+    <a style="font-size: 30px;color:azure" id="jeechange"></a>
+    <a style="font-size: 30px;color:azure" id="boardchange"></a>
     <p style="text-align:center;margin-top:100px;color: orange;">Intreseted in how we predict suitable colleges for you?
     </p>
     <a target="_blank" href="../Howtobasic/howtobasic.html"
       style="color: skyblue;text-decoration: none;text-align: center;">
       <p>Learn Here</p>
-    </a>
+    </a><br>
     <br>
     <br>
     <br>
@@ -180,13 +195,16 @@
         +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
       <br>
       <p class="font1">
-        <a target="_blank" style="color: rgb(223, 124, 124);text-decoration: none;"
-          href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error</a>
+        <a target="_blank" style="color: rgb(255, 0, 0);text-decoration: none;"
+          href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error &nbsp;&nbsp; </a>
+          <a style="color: rgb(0, 255, 255);text-decoration: none;"
+          href="../index.html">Home &nbsp;&nbsp; </a>
       </p>
   </footer>
 </body>
 <script src="secjs.js"></script>
 <script src="Thirdjava.js"></script>
 <script src="GUJCET.js"></script>
-<!-- <script src="JEE.js"></script> -->
+<script src="JEE.js"></script>
+<script src="Board.js"></script>
 </html>

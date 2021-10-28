@@ -128,3 +128,31 @@ n++;
 localStorage.setItem("on_load_counter", n);
 
 document.getElementById('CounterVisitor').innerHTML = n;
+
+
+function submitclickedjee()
+{
+    
+    title_change.innerText="Result";
+    rank=gujrank.value;
+    console.log("ONG CLICKED");
+
+  
+    for(i = 0; i < branch.length; i++) {
+        if(branch[i].checked)
+            selectedbranch=branch[i].value;
+    }
+}
+function submitclickedboard()
+{
+   
+    title_change.innerText="Result";
+    rank=gujrank.value;
+    console.log("ONG CLICKED");
+
+  
+    for(i = 0; i < branch.length; i++) {
+        if(branch[i].checked)
+            selectedbranch=branch[i].value;
+    }
+}

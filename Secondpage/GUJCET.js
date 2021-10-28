@@ -407,11 +407,11 @@
 
           }
 
-          //E
-          else if(selectedbranch=="ECE")
+          //ME
+          else if(selectedbranch=="ME")
           {
-            branch_dis.innerText="ECE";
-            console.log("ECE");
+            branch_dis.innerText="ME";
+            console.log("ME");
             output.innerHTML = "Loading...";
             
             console.log(stdin.value);
@@ -419,7 +419,7 @@
             var obj7 = {};
             obj7["clientId"] = "5432d7273018e7a31838ca0d0dfa4db";
             obj7["clientSecret"] = "95e0e10b83ee23d1985f8c69a271cac82c635dab8815bf837e8f27de05272757";
-            obj7["script"] = "\r\nimport java.util.Scanner;\r\n\r\npublic class Main {\r\n\r\n    public static void main(String[] args) {\r\n        int n;\r\n\t\tScanner sc = new Scanner(System.in);\r\n\t\tn = sc.nextInt();\r\n\t\t// System.out.println(\"the branch you have selected is ECE :\");\r\n\t\tif(n<=2099){\r\n\t\t\tSystem.out.println(\"Nirma\");\r\n\t\t}\r\n\t\tif(n<=5456){\r\n\t\t\tSystem.out.println(\"PDPU raisan\");\r\n\t\t}\r\n\t\tif(n<=3759){\r\n\t\t\tSystem.out.println(\"LDLC ahmedabad\");\r\n\t\t}\r\n        if(n<=3509){\r\n            System.out.println(\"DDU(GIA) nadiad\");\r\n            }\r\n        if(n<=7886){\r\n                System.out.println(\"DDU(SFI) nadiad\");\r\n            }\r\n\t\tif(n<=7495){\r\n\t\t\tSystem.out.println(\" vgec,ahmedabad\");\r\n\t\t}\r\n\t\tif(n<=18435){\r\n\t\t\tSystem.out.println(\" BVM(SFI) vvnagar\");\r\n\t\t}\r\n\t\tif(n<=13739){\r\n\t\t\tSystem.out.println(\" GEC,surat\");\r\n\t\t}\r\n                if(n<=70000){\r\n            \tSystem.out.println(\"GCET ,vvnagar\");\r\n               System.out.println(\"GEC bharuch\");\r\n               System.out.println(\"GEC patan\");\r\n               System.out.println(\"GEC bhavnagar\");\r\n               System.out.println(\"GEC rajkot\");\r\n               System.out.println(\"Alpha kalol\");\r\n               System.out.println(\"Atmiya rajkot\");\r\n               System.out.println(\"Darshan university rajkot\");\r\n               System.out.println(\"CSPIT changa\");\r\n               System.out.println(\"Indus university abad\");\r\n                }\r\n\t\telse{\r\n\t\t\tSystem.out.println(\"Can not fetch output , Enter valid input.\");\r\n\t\t}\r\n\t\t\r\n             \r\n    }\r\n    \r\n}\r\n";
+            obj7["script"] = "\r\nimport java.util.Scanner;\r\npublic class Main {\r\n    public static void main(String[] args) {\r\n        int n;\r\n        Scanner sc = new Scanner(System.in);\r\n        n = sc.nextInt();\r\n        // System.out.println(\"the branch you have selected is Mechanical engineering\");\r\n        if(n<=2806){\r\n            System.out.println(\"Nirma University\");\r\n        }\r\n        if(n<=2234){\r\n            System.out.println(\"MSU Baroda\");\r\n        }\r\n        if(n<=10246){\r\n            System.out.println(\"PDPU RAISAN\");\r\n        }\r\n        if(n<=3215){\r\n            System.out.println(\" LDCE AHMEDABAD\");\r\n        }\r\n        if(n<=24711){\r\n            System.out.println(\"DDU(SFI) NADIAD\");\r\n        }\r\n        if(n<=6542){\r\n            System.out.println(\"VGEC Ahmedabad\");\r\n        }\r\n        if(n<=5444){\r\n            System.out.println(\"BVM(GIA) VVnagar\");\r\n        }\r\n        if(n<=7734){\r\n            System.out.println(\" BV(SFI) VVnagar\");\r\n        }\r\n        if(n<=26607){\r\n            System.out.println(\"GEC Bharuch\");\r\n        }\r\n        if(n<=27127){\r\n            System.out.println(\"GEC Bhavnagar\");\r\n        }\r\n        if(n<=12985){\r\n            System.out.println(\"GEC Rajkot\");\r\n        }\r\n        if(n<=9889){\r\n            System.out.println(\"GEC Surat\");\r\n        }\r\n        if(n<=25399){\r\n            System.out.println(\"GEC Valsad\");\r\n        }\r\n        if(n<=10220){\r\n            System.out.println(\"IITRAM Abad\");\r\n        }\r\n        if(n<=70000){\r\n            System.out.println(\"GCET VVnagar\");\r\n        System.out.println(\"Indus University Abad\");\r\n        System.out.println(\"GEC Palanpur\");\r\n        System.out.println(\"Gyanmanjri Bhavnagar\");\r\n        System.out.println(\"CSPIT Changa\");\r\n        System.out.println(\"Darshan University Rajkot\");\r\n        System.out.println(\"Atmiya University Rajkot\");\r\n        System.out.println(\"Aditya Birla Abad\");\r\n        System.out.println(\"Alpha Kalol\");\r\n        System.out.println(\"Appolo ET Abad\");\r\n        System.out.println(\"Ganpat University Mehsana\");\r\n        System.out.println(\"Gec Bhuj\");\r\n        }\r\n        else{\r\n            System.out.println(\"Can not fetch output , Enter valid input.\");\r\n        }\r\n        \r\n    }\r\n\r\n}\r\n   \r\n    \r\n\r\n";
             obj7["language"] = "java";
             obj7["versionIndex"] = "0";
             obj7["stdin"] = stdin.value;
