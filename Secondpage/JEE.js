@@ -1,29 +1,34 @@
-var jee_change=document.getElementById("jeechange")
-var jee_title=document.getElementById("titlejee")
-function jeeo(){
-  var input=document.getElementById('jee')
-  var res=document.getElementById('outputjee')
-  if(input.value<=10000){
-    jee_title.innerText="Your JEE Rank is :";
-    res.innerText=Number(input.value);
-    jee_change.innerText="Congratulations! You are Eligible for Admission in ACPC Through JEE";
+var jee_change = document.getElementById("jeechange")
+var jee_title = document.getElementById("titlejee")
+function jeeo() {
+  var input = document.getElementById('jee')
+  var res = document.getElementById('outputjee')
+
+  if (input.value <= 10000 && input.value > 0 && input.value < 10000000) {
+    jee_title.innerText = "Your JEE Rank is :";
+    res.innerText = Number(input.value);
+    jee_change.innerText = "Congratulations! You are Eligible for Admission in ACPC Through JEE";
   }
-   else{
-    jee_title.innerText="Your JEE Rank is :";
-    res.innerText=Number(input.value);
-    jee_change.innerText="Nice Try! You are Not Eligible for Admission in ACPC Through JEE";
-   }
+  else if(input.value>10000 && input.value > 0 ){
+    jee_title.innerText = "Your JEE Rank is :";
+    res.innerText = Number(input.value);
+    jee_change.innerText = "Nice Try! You are Not Eligible for Admission in ACPC Through JEE";
+  }
+  else {
+    alert("Enter Valid JEE Rank.");
+    console.log("Enter Valid JEE Rank (console)");
+  }
   // res.innerText=Number(input.value) + Number(1) 
   // input.style.color
-  console.log("clicked jee");console.log("Showing results for JEE");
-  }
+  console.log("clicked jee"); console.log("Showing results for JEE");
+}
 
 // var runj = document.getElementById("runj");
 
 // runj.addEventListener("click", function (e) {
-  
+
 //   e.preventDefault();
-  
+
 //   var jee = document.getElementById("jee");
 //   var form = document.getElementById("form");
 //   var credits = document.getElementById("credits");
@@ -43,9 +48,9 @@ function jeeo(){
 //   branch_dis.innerText="I.T.";
 //   console.log("Selceted one of branch"+selectedbranch);
 //   output2.innerHTML = "Loading...";
-  
+
 //   console.log(jee.value);
-  
+
 //   var obj8 = {};
 //   obj8["clientId"] = "5432d7273018e7a31838ca0d0dfa4db";
 //   obj8["clientSecret"] = "95e0e10b83ee23d1985f8c69a271cac82c635dab8815bf837e8f27de05272757";
@@ -54,9 +59,9 @@ function jeeo(){
 //   obj8["versionIndex"] = "0";
 //   obj8["jee"] = jee.value;
 //   var jsonStr = JSON.stringify(obj8);
-  
+
 //   console.log(jsonStr);
-  
+
 //   const proxyurl = "https://cors-anywhere.herokuapp.com/";
 //   const url = "https://api.jdoodle.com/v1/execute";
 //   fetch(proxyurl + url, {
@@ -78,7 +83,7 @@ function jeeo(){
 //     output2.innerHTML = formattedOutput;
 //   })
 //   .catch(() => console.log("Can’t access " + url + " response. Blocked by browser?"))
-  
+
 //   const creditsUrl = "https://api.jdoodle.com/v1/credit-spent";
 //   fetch(proxyurl + creditsUrl, {
 //     method: 'post',

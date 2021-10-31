@@ -7,8 +7,6 @@ var tableRef = document.getElementById('displayresult').getElementsByTagName('tb
 var title_change=document.getElementById("changetitle")
 var branch_dis=document.getElementById("branchchange")
 
-
-
 thirdpage.style.display="none"
 secpage.style.display="block"
 function backtosecpage()
@@ -28,7 +26,6 @@ function submitclicked()
     rank=gujrank.value;
     console.log("ONG CLICKED");
 
-  
     for(i = 0; i < branch.length; i++) {
         if(branch[i].checked)
             selectedbranch=branch[i].value;

@@ -7,8 +7,8 @@
 </head>
 <body class="font2">
   <div class="header nore">
-    <abbr title="ACPC Councelling Guide">
-      <h4 class="font1 tdtext" style="text-align: center;">ACG </h4>
+    <abbr title="ACPC Counselling Guide">
+      <h4  class="font1 tdtext" style="text-align: center;">ACG </h4>
     </abbr>
     
     <p class="font1 date" style="color:white;">Date -<span id='date'></span></p>
@@ -41,7 +41,7 @@
             <input id="stdin" type="text" class="inputstyle font1" required></input>
           </div>
           <input id="how-other1" name="how" type="checkbox">
-      
+   
           <label style="margin-left: 20px;font-weight: bold;" for="how-other1" class="side-label1 font3">Enter your JEE
             Rank</label>
           <div class="how-other-disclosure1">
@@ -69,28 +69,27 @@
               <a style="color:brown;">Select any 1 branch of your choice</a>
               <br>
               <br>
-              <input id="Civil" type="radio" class="brb" name="field" value="Civil"> Civil </br>
-              <input id="IT" type="radio" class="brb" name="field" value="IT"> IT </br>
-              <input id="CS" type="radio" class="brb" name="field" value="CS"> CS </br>
-              <input id="EE" type="radio" class="brb" name="field" value="EE"> EE </br>
-              <input id="ECE" type="radio" class="brb" name="field" value="ECE"> ECE </br>
-              <input id="Chemical" type="radio" class="brb" name="field" value="Chemical"> Chemical</br>
+              <input id="Civil" type="radio" class="brb" name="field" value="Civil"> <a href="https://www.wikiwand.com/en/Civil" style="text-decoration: none;color: rgb(0, 0, 0);">Civil </a></br>
+              <input id="IT" type="radio" class="brb" name="field" value="IT"> <a href="https://www.wikiwand.com/en/Information_technology" style="text-decoration: none;color: rgb(0, 0, 0);">IT</a></br>
+              <input id="CS" type="radio" class="brb" name="field" value="CS"> <a href="https://www.wikiwand.com/en/Computer_science" style="text-decoration: none;color: rgb(0, 0, 0);">CS </a></br>
+              <input id="EE" type="radio" class="brb" name="field" value="EE">  <a href="https://www.wikiwand.com/en/Electrical_engineering" style="text-decoration: none;color: rgb(0, 0, 0);">EE </a></br>
+              <input id="ECE" type="radio" class="brb" name="field" value="EC"> <a href="https://www.wikiwand.com/en/Telecommunications" style="text-decoration: none;color: rgb(0, 0, 7);">EC </a></br>
+              <input id="Chemical" type="radio" class="brb" name="field" value="Chemical"> <a href="https://www.wikiwand.com/en/Chemical_engineering" style="text-decoration: none;color: rgb(0, 0, 0);">Chemical </a></br>
               <!-- <input id="Environment" type="radio" class="brb" name="field" value="Environment"> Environment </br> -->
-              <input id="ME" type="radio" class="brb" name="field" value="ME"> ME </br>
+              <input id="ME" type="radio" class="brb" name="field" value="ME">  <a href="https://www.wikiwand.com/en/Mechanical_engineering" style="text-decoration: none;color: rgb(0, 0, 0);">ME </a></br>
               <br>
-              <br>
+              
               <!-- 
                 <input id="Auto" type="radio" class="brb" name = "field" value="Auto"> Auto </br>
                 <input id="FC" type="radio" class="brb" name = "field" value="FC"> FC </br>
                 <input id="AI" type="radio" class="brb" name = "field" value="AI"> AI </br>
                 <input id="Aero" type="radio" class="brb" name = "field" value="Aero">Aero </br>
                 <input id="Mechatronics" type="radio" class="brb" name = "field" value="Mechatronics"> Mechatronics </br> -->
-              <br>
-              <button class="btn font1" onclick="submitclicked()" id="run">Find(GUJCET)</button>
-              <br>
               
-             
+              <button class="btn font1" onclick="submitclicked()" id="run">Find(GUJCET)</button>
             </form>
+            <hr>
+            <br>
             <!-- <input type="submit" class="yellow" value="Get sum" onclick="jeeo()"><br> -->
             <button class="btn font1" onclick="jeeo()">Find (JEE)</button>
             <button class="btn font1" onclick="boardo()">Find (Board)</button>
@@ -109,7 +108,9 @@
   <div id="box2">
     <div id="leftbox2" style="background-color:bisque;" class="nore">
       <a class="font1" style="font-size: 50px; color:rgb(240, 196, 145);"> 
-        <div id="box2"><span class="backbtn" onclick="backtosecpage()"> &#9664;</span> </div>Showing Results for <span
+        <div id="box2"><span class="backbtn" onclick="backtosecpage()"> &#9664;</span> </div>Showing Results for <span 
+        style="font-size: 50px; color:rgb(10, 178, 255)" class="font1" id="stdin"></span>
+        <span
           style="font-size: 50px; color:rgb(250, 0, 0)" class="font1" id="branchchange"></span> Branch</a>
       <div id="print-content">
         <code style="font-size: 30px;color:azure" id="output"></code>
@@ -148,14 +149,15 @@
             </tr> -->
           </tbody>
         </table>
-        <a class="font1" style="color: rgb(21, 189, 255);" href="../Feedbackto/Feedback.html" target="_blank">We want to
-          hear from you!&#128077;</a>
+       
         <div style="margin-top:20px; margin-left:20px;">
           <!-- <input type="button" onclick="printDiv('print-content')" value="Print My Results"/>(this will print results only) -->
           <abbr title="(this will print results only)"><button type="button" onclick="printDiv('print-content')"
               class="printbutton font1"><i style="font-size: 40px; align-content: center;"
                 class="material-icons">&#xe8ad;</i></button></abbr>
-          <!-- Feedback Stuff -->
+                <!-- Feedback Stuff --><br>
+                <a class="font1" style="color: rgb(21, 189, 255);" href="../Feedbackto/Feedback.html" target="_blank">We want to
+                  hear from you!&#128077;</a>
           <div>
           </div>
         </div>

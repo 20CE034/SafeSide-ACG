@@ -17,9 +17,9 @@
               if(branch[i].checked)
                   selectedbranch=branch[i].value;
           }
-
+          
           //IT
-          if(selectedbranch=="IT")
+          if(selectedbranch=="IT"&&stdin.value.length!=0)
           {
             branch_dis.innerText="I.T.";
             console.log("I.T.");
@@ -472,6 +472,8 @@
           }
           else 
           {
+            alert("Enter Valid GUJCET Rank");
+            console.log("Enter Valid GUJCET Rank (console)");
             console.log("Error : null (nothing inserted)");
           }
             

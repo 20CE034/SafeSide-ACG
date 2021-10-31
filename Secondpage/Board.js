@@ -3,21 +3,30 @@ var board_title=document.getElementById("titleboard")
 function boardo(){
   var input1=document.getElementById('board')
   var resu=document.getElementById('outputboard')
-  if(input1.value>=140){
-    board_title.innerText="Your Board Marks is/are :";
-    resu.innerText=Number(input1.value);
-    board_change.innerText="Congratulations! You are Eligible for Admission in ACPC";
-  }
-   else{
-    board_title.innerText="Your Board Marks is/are :";
-    resu.innerText=Number(input1.value);
-    board_change.innerText="Nice Try! You are Not Eligible for Admission in ACPC";
-   }
-  // res.innerText=Number(input.value) + Number(1) 
-  // input.style.color
-  console.log("clicked board");console.log("Showing results for JEE");
-  }
-
+  // if(input1.value==0)
+  // {
+  //       alert("Enter Valid input.");  	
+  // }
+  // else{  
+        if(input1.value>=140 &&input1.value>0&&input1.value<301){
+          board_title.innerText="Your Board Marks is/are :";
+          resu.innerText=Number(input1.value);
+          board_change.innerText="Congratulations! You are Eligible for Admission in ACPC";
+        }
+        else if (input1.value<140 &&input1.value>0){
+          board_title.innerText="Your Board Marks is/are :";
+          resu.innerText=Number(input1.value);
+          board_change.innerText="Nice Try! You are Not Eligible for Admission in ACPC";
+        }
+        else{
+         alert("Enter Valid Board Rank.");
+         console.log("Enter Valid Board Rank (console)");
+        }
+        // res.innerText=Number(input.value) + Number(1) 
+        // input.style.color
+        console.log("clicked board");console.log("Showing results for Board");
+        // }
+}
 
 // var run3 = document.getElementById("run3");
 

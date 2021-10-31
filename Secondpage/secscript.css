@@ -590,7 +590,7 @@ abbr[title] {
   content: '';
         background: #f4f4f4;
         border-radius: 100%;
-        border: 1px solid darken(#f4f4f4, 25%);
+        border: 1px solid darken(#fd1313, 25%);
         display: inline-block;
         width: 1.4em;
         height: 1.4em;
@@ -598,6 +598,7 @@ abbr[title] {
         cursor: pointer;
         text-align: center;
         transition: all 250ms ease;
+        font-weight: bold;
 }
 
 
