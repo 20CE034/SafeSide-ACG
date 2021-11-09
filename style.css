@@ -77,7 +77,7 @@ body {
         float:left; 
         background:rgb(255, 255, 255);
         width:50%;
-        height:850px;
+        height:870px;
         border-spacing:0 0;
         background-image: url(./Images/firstimg.jpeg);
         background-size: 1000px 850px;
@@ -89,7 +89,7 @@ body {
         float:right;
         background:rgb(212, 212, 212);
         width:50%;
-        height:850px;
+        height:870px;
         border-spacing:0 0;
         background-image: url(./Images/firstimg2.jpeg);
         background-repeat: no-repeat;
@@ -271,8 +271,8 @@ background-color: #888;
 }
 
 .loginsign{
-  color: rgb(0, 255, 42);
-  text-shadow:     0 1px 0 rgb(100, 214, 195),
+  color: rgb(0, 255, 34);
+  text-shadow:     0 1px 0 rgba(209, 233, 229, 0),
 	                 0 2px 0 rgba(157, 84, 173, 0),
 	                 0 3px 0 rgba(157, 84, 173, 0),
 	                 0 4px 0 rgba(157, 84, 173, 0),
@@ -323,7 +323,7 @@ abbr[title] {
 .tdtext1{
   font-family: Trebuchet MS,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Tahoma,sans-serif; 
   font-size: 70px;
-  color: rgb(0, 255, 85);
+  color: rgb(70, 72, 196);
   text-shadow:     0 1px 0 rgb(255, 60, 0),
 	                 0 2px 0 rgba(157, 84, 173, 0),
 	                 0 3px 0 rgba(157, 84, 173, 0),
@@ -348,8 +348,8 @@ abbr[title] {
 
 #leftbox1 {
   float:left; 
-  background-image: linear-gradient(rgba(87, 221, 255, 0.788), rgba(0, 247, 234, 0.986), rgb(172, 236, 236));
-  width:50%;
+  background-image: url(./Images/AboveF.jpg);
+  width:30%;
   height:400px;
   border-spacing:0 0;
   
@@ -358,32 +358,32 @@ abbr[title] {
 
 #rightbox1 {
   float:right;
-  background-image: linear-gradient(rgba(87, 221, 255, 0.788), rgba(0, 247, 234, 0.986), rgb(172, 236, 236));
-  width:50%;
+  background-image: url(./Images/AboveF.jpg);
+  width:70%;
   height:400px;
  
 
 }
 
 .vertical-menu {
-  width: 200px;
+  width: 300px;
 }
 
 .vertical-menu a {
   background-color: rgba(238, 238, 238, 0);
-  color: black;
+  color: rgb(250, 249, 202);
   display: block;
   padding: 12px;
   text-decoration: none;
 }
 
 .vertical-menu a:hover {
-  background-color: rgb(19, 188, 255);
+  background-color: rgb(255, 47, 19);
 }
 
 .vertical-menu a.active {
   background-color: #04AA6D;
-  color: white;
+  color: rgb(253, 249, 8);
 }
 
 /* fallback */

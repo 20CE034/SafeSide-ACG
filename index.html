@@ -1,120 +1,140 @@
 <!DOCTYPE html>
-<head >
+
+<head>
   <title>ACG</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./Images/tabimg.png">
-    
-    </head>
-    
-    <body >
-    <div class="header">
-      <abbr title="ACPC Councelling Guide"><h4 class="font1 tdtext" style="text-align: center;">ACG </h4></abbr>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="./Images/tabimg.png">
 
-      
-      <p class="font1 date" style="color:white;">Date -<span id='date'></span></p>
-      <script>
-       n =  new Date();
-       y = n.getFullYear();
-       m = n.getMonth() + 1;
-       d = n.getDate();
-       document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
-       </script>
-    </div>
-    <div style="padding-left:30px">
-      
-    </div>
+</head>
 
-    <div id = "boxes">
-       
-        <div id = "leftbox" style="background-color:bisque;" >
-          <div class="container font1" style="border-width: 5px;">
-            
-          <p style="text-align: center; font-size:50px;" class="font2 tdtext1">Welcome To ACPC Counselling Guide</p>
-
-          <div class="background1">
-            <div class="transparentbox">
-              <p style="font-size: 30px;">Welcome to ACG!</p>
-              <div style="margin-left: 20px;color:darkblue;">We Hope you had a great time in your school! Now you are moving to college. We have best colleges for your choice and every thing you need to know about ACPC admission, etc.</div>
-            <br>
-              <img style="width:600px; height:300px;" src="./Images/pdpu.png">
-            </div>
-          </div>
-</div>
+<body>
+  <div class="header">
+    <abbr title="ACPC Councelling Guide">
+      <h4 class="font1 tdtext" style="text-align: center;">ACG </h4>
+    </abbr>
 
 
-         
-        </div> 
-          
-        <div id = "rightbox">
-          <nev style="padding: 0px; margin: 0px;">
-          <ul>
-              <a href="#" style="text-decoration: none; margin-bottom: -10px;">
-                <span title="Welcome Back!"><li class="font1 navg li1 loginsign" id="loginbtn"  onclick="login()">  Login </li></span> 
-              </a>
-              <a href="#" style="text-decoration: none; margin-bottom: -10px;">
-                <span title="New to website? Create an account"><li class="font1 navg li1 loginsign" id="signupbtn"  onclick="signup()"> Sign Up </li></span>
-              </a>
-        <br>
-          </ul>
-            
-          </nev>
-          <form name="form1" action="./Secondpage/SecPage.html" >
-  <div class="container" id="Lcontainer" >
-       <br>
-              <label for="uname"  type="tel" id="phone" name="phone"><b class="font1"><abbr title="Enter your Phone Number"><i class="material-icons">&#xe551;</i></abbr>&nbsp; &nbsp; :</b></label>
-              <!-- <input type="text" placeholder="Enter Phone number(+91)" name="phone" required> -->
-              <input type='text' placeholder="Enter Phone number(+91)" minlength="10"  name='text1'/>
-          <br>
-              <label for="psw" ><b class="font1"><abbr title="Enter Password"><i class="material-icons">&#128273;</i></abbr>&nbsp;    :</b></label>
-              <input type="password" placeholder="Enter Password" name="psw" minlength="8" required>
-              <br>
-              <!-- <p class="psw"><a class="font1" href="#" target ="_blank" style="color:rgb(0, 127, 253); margin-bottom: -10px; margin-top: -10px;">Forgot password?</a></p> -->
-          <br>
-          <label>
-            
-            <input type="checkbox" class="font1" checked="checked" name="remember" style="margin-bottom:5px"><a class="font1">&nbsp; Remember me</a> 
-          </label>
-          <br>  
-          <p class="font1">By loging in you agree to our 
-            <a href="./termsncon/tandc.html" target="_blank " style="color:rgb(0, 128, 255) " class="font1">
-              Terms & Privacy</a>.
-            </p>
-          <br>
-            <a href="#"><button type="submit" name="submit" value="Submit" onclick="phonenumber(document.form1.text1)">Login</button></a> 
-              <br> 
-            <br>
- 
-  
-  <!-- <li class="submit"><input /></li> -->
- 
-          </form>
+    <p class="font1 date" style="color:white;">Date -<span id='date'></span></p>
+    <script>
+      n = new Date();
+      y = n.getFullYear();
+      m = n.getMonth() + 1;
+      d = n.getDate();
+      document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
+    </script>
+  </div>
+  <div style="padding-left:30px">
+
   </div>
 
-  <div class="container font1" id="Scontainer">
+  <div id="boxes">
 
-    
-    <b><label>First Name :</label>
-      <input type="text" placeholder="Jay" name="firstName">
-      <br>
-      <label>Last Name :</label>
-      <input type="text" placeholder="Savaliya" name="lastName">
-      <br>
-      <label>User Name :</label>
-      <input type="text" placeholder="Absorber03" name="userName">
-      <br>
-      <label>Mobile Number &nbsp; :</label>
-      <input type="Mobile" placeholder="+91999999999" name="mobileNumber" maxlength="12">
-      <br><br>
+    <div id="leftbox" style="background-color:bisque;">
+      <div class="container font1" style="border-width: 5px;">
 
-      <label>Birth Date &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; :</label>
-      <input type="date" name="birthDate"></b>
+        <p style="text-align: center; font-size:50px;" class="font2 tdtext1">Welcome To ACPC Counselling Guide</p>
+
+        <div class="background1">
+          <div class="transparentbox">
+            <p style="font-size: 30px;">Welcome to ACG!</p>
+            <div style="margin-left: 20px;color:darkblue;">We Hope you had a great time in your school! Now you are
+              moving to college. We have best colleges for your choice and every thing you need to know about ACPC
+              admission, etc.</div>
+            <br>
+            <img style="width:600px; height:300px;" src="./Images/pdpu.png">
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+
+    <div id="rightbox">
+      <nev style="padding: 0px; margin: 0px;">
+        <ul>
+          <a href="#" style="text-decoration: none; margin-bottom: -10px;">
+            <span title="Welcome Back!">
+              <li class="font1 navg li1 loginsign" id="loginbtn" onclick="login()"> Login </li>
+            </span>
+          </a>
+          <a href="#" style="text-decoration: none; margin-bottom: -10px;">
+            <span title="New to website? Create an account">
+              <li class="font1 navg li1 loginsign" id="signupbtn" onclick="signup()"> Sign Up </li>
+            </span>
+          </a>
+          <br>
+        </ul>
+
+      </nev>
+      <form name="form1" action="./Secondpage/SecPage.html">
+        <div class="container" id="Lcontainer">
+          <br>
+          <label for="uname" type="tel" id="phone" name="phone"><b class="font1"><abbr
+                title="Enter your Phone Number"><i class="material-icons">&#xe551;</i></abbr>&nbsp; &nbsp; :</b></label>
+          <!-- <input type="text" placeholder="Enter Phone number(+91)" name="phone" required> -->
+          <input type='text' placeholder="Enter Phone number(+91)" minlength="10" name='text1' />
+          <br>
+          <label for="psw"><b class="font1"><abbr title="Enter Password"><i
+                  class="material-icons">&#128273;</i></abbr>&nbsp; :</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" minlength="8" required>
+          <br>
+          <!-- <p class="psw"><a class="font1" href="#" target ="_blank" style="color:rgb(0, 127, 253); margin-bottom: -10px; margin-top: -10px;">Forgot password?</a></p> -->
+          <br>
+          <label>
+
+            <input type="checkbox" class="font1" checked="checked" name="remember" style="margin-bottom:5px"><a
+              class="font1">&nbsp; Remember me</a>
+          </label>
+          <br>
+          <p class="font1" style="font-style: italic;">By loging in you agree to our
+            <a href="./termsncon/tandc.html" target="_blank " style="color:rgb(0, 128, 255) " class="font1">
+              Terms & Privacy</a>.
+          </p>
+          <br>
+          <a href="#" class="font1"><button style="color:greenyellow;" class="font1" type="submit" name="submit"
+              value="Submit" onclick="phonenumber(document.form1.text1)">
+              Login
+            </button>
+          </a>
+
+          <br>
+          <a style="color:skyblue; margin-left: 100px;font-style: italic;font-weight: bolder;" class="font1">or </a>
+          <br>
+      </form>
+    </div>
+    <a style="margin-left: 18px;" href="./Secondpage/SecPage.html">
+      <button style="padding:10px 10px; color:orangered;" class="font1">
+        Continue Without Login
+      </button>
+    </a>
+    <br>
+    <!-- <li class="submit"><input /></li> -->
+    <div class="container font1" id="Scontainer">
+
+
+      <b><label>First Name :</label>
+        <input type="text" placeholder="Jay" name="firstName">
+        <br>
+        <label>Last Name :</label>
+        <input type="text" placeholder="Savaliya" name="lastName">
+        <br>
+        <label>User Name :</label>
+        <input type="text" placeholder="Absorber03" name="userName">
+        <br>
+        <label>Mobile Number &nbsp; :</label>
+        <input type="Mobile" placeholder="+91999999999" name="mobileNumber" maxlength="12">
+        <br><br>
+
+        <label>Birth Date &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; :</label>
+        <input type="date" name="birthDate"></b>
       <br><br>
 
       <label for="email"><b>Email &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</b></label>
       <input type="text" placeholder="abc03@gmail.com" name="email" required>
       <br>
-      <label for="psw"><b>Password  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</b></label>
+      <label for="psw"><b>Password &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:</b></label>
       <input type="password" placeholder="Enter Password" name="psw" minlength="8" required>
       <br>
       <label for="psw-repeat"><b>Repeat Password :</b></label>
@@ -124,62 +144,79 @@
         <input type="checkbox" class="font1" checked="checked" name="remember" style="margin-bottom:15px;"> Remember me
       </label>
       <br>
-      <p>By creating an account you agree to our 
-        <a class="font1" target="_blank" href="./termsncon/tandc.html" style="color:rgb(195, 225, 255) ">
-          Terms & Privacy
-        </a>.
+      <p class="font1" style="font-style: italic;">By creating an account you agree to our
+        <a href="./termsncon/tandc.html" target="_blank " style="color:rgb(0, 128, 255) " class="font1">
+          Terms & Privacy</a>.
       </p>
       <div class="clearfix">
         <button type="submit" class="signupbtn font1">Sign Up</button>
         <br>
-      
+
       </div>
     </div>
+    </form>
+  </div>
+  </div>
   </form>
-</div>  
-</div>
-</form>
-        
+
+  </div>
+
+  <div id="leftbox1" class="font1" style="background-color:grey;">
+    <p class="font2">
+      &#128279;<a style="font-style:italic;font-weight: bold;color: greenyellow;">Useful Links </a>
+    </p>
+
+    <div class="vertical-menu">
+      <hr>
+      <a href="http://www.jacpcldce.ac.in/" target="_blank">&#183; JACPC</a>
+      <a href="https://admissions.nic.in/guj/gujccounselling/root/Home.aspx?enc=Nm7QwHILXclJQSv2YVS+7uWbrCuNNuLvhl5/zbjO15eVFzVu8uHlIFDbOirm7N1Z"
+        target="_blank">&#183; Admission Link ACPC</a>
+      <a href="https://www.gtu.ac.in/" target="_blank">&#183; GTU</a>
+      <a href="https://gujacpc.nic.in/RegSys/File/GetFile?FileId=5&LangId=Ps" target="_blank"> &#183; ACPC Registration
+        Process</a>
+      <a href="./Howtobasic/howtobasic.html" target="_blank">&#183; How we fetch best results</a>
+      <br>
+      <br>
     </div>
 
-<div id="leftbox1" class="font1" style="background-color:grey;">
-  <p class="font2">
-    &#128279; Useful Links:  
-  </p>
-  
-<div class="vertical-menu">
-  <hr>
-  <a href="http://www.jacpcldce.ac.in/" target="_blank">&#183; JACPC</a>
-  <a href="https://gujacpc.nic.in/RegSys/Page/Page?PageId=1&LangId=P" target="_blank" >&#183;  NIC ACPC</a>
-  <a href="https://www.gtu.ac.in/" target="_blank">&#183;  GTU</a>
-  <a href="https://gujacpc.nic.in/RegSys/File/GetFile?FileId=5&LangId=Ps" target="_blank"> &#183;  ACPC Registration Process</a>
-  <a href="./Howtobasic/howtobasic.html" target="_blank">&#183;  How we fetch best results</a>
-</div>
-
-</div>
-
-<div id="rightbox1" class="font1" style="background-color:grey;">
-  <p  class="font2">
-   
-  </p>
-  <div class="vertical-menu">
-    
-    
   </div>
-  
-</div>
 
-<footer style="color:white;" class="clearfix">
-  <adress class="font1">Office No 4, Chandivali Farms, Sub Survey-1, Sakinaka, ABCD Area (e)
-    City	Ahmedabad
-    Gujarat<br>Write an email us at <a href="mailto:abc@xyz.com" style="color:sandybrown; text-decoration: none;">Email</a><br>
-  In case of any help please contact during 10 a.m. to 6 p.m. at <i class="material-icons">&#xe551;</i>
-  <a href="tel:0123456789" class="font1" target = "_blank" style="color:sandybrown">Call +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
-  <br>Visitors:
-  <p class="font1">
-    <a target="_blank" style="color: rgb(223, 124, 124);text-decoration: none;" href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error</a>   
-  </p>
-</footer>
+  <div id="rightbox1" class="font1" style="background-color:grey;">
+    <p class="font2">
+      <a style="color:rgb(93, 238, 248);font-weight: bold;">Latest News-Events About ACPC</a>
+    <p style="color:rgb(246, 255, 125)">The choice filling for actual round for first year BE/BTech and BPharm is
+      available for candidate.
+      The candidates are requested to do maximum choice filling based on analysis of mock round.
+      The mock round analysis is also available.</p>
+    <br>
+    <p style="text-align: right;margin-right:20px;">
+      <a style="color:rgb(125, 255, 153);">
+        source -
+      </a>
+      </a><a href="https://gujacpc.nic.in/RegSys/Page/Page?PageId=1&LangId=P#" target="_blank"
+        style="color:rgba(62, 204, 247, 0.952);text-decoration: none;font-weight: bold;">
+        NIC ACPC
+      </a>
+    </p>
+    </p>
+    <div class="vertical-menu">
+    </div>
+  </div>
+
+  <footer style="color:white;" class="clearfix">
+    <adress class="font1">Office No 4, Chandivali Farms, Sub Survey-1, Sakinaka, ABCD Area (e)
+      City Ahmedabad
+      Gujarat<br>Write an email us at <a href="mailto:abc@xyz.com"
+        style="color:sandybrown; text-decoration: none;">Email</a><br>
+      In case of any help please contact during 10 a.m. to 6 p.m. at <i class="material-icons">&#xe551;</i>
+      <a href="tel:0123456789" class="font1" target="_blank" style="color:sandybrown">Call
+        +91-(01)-23456789</a><br>Copyright &copy; 2021,ACG</address>
+      <br>Visitors:
+      <p class="font1">
+        <a target="_blank" style="color: rgb(223, 124, 124);text-decoration: none;"
+          href="https://cors-anywhere.herokuapp.com/corsdemo">Fix Error</a>
+      </p>
+  </footer>
 </body>
 <script src="loginsign.js"></script>
 
