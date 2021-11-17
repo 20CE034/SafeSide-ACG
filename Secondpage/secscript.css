@@ -708,5 +708,16 @@ abbr[title] {
     background-position-y:top;
   }
 
-   
+  #rightbox2{
+    float:right;
+    background:rgb(212, 212, 212);
+    width:70%;
+    height:850px;
+    padding: 20px;
+    border-spacing:0 0;
+    background-image: url(../Images/secimg.jpeg);
+     background-repeat: no-repeat;
+  background-size: cover;
+    
+}
 
