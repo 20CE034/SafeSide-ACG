@@ -344,10 +344,10 @@
 
 
           //ECE
-          else if(selectedbranch=="ECE")
+          else if(selectedbranch=="EC")
           {
-            branch_dis.innerText="ECE";
-            console.log("ECE");
+            branch_dis.innerText="EC";
+            console.log("EC");
             output.innerHTML = "Loading...";
             
             console.log(stdin.value);
