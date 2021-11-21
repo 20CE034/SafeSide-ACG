@@ -58,6 +58,7 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 ## Authors
 
 - [@Plushb9rry](https://github.com/Plushb9rry)
+- [@vatsaldoshi2412](https://github.com/vatsaldoshi2412)
 
 
 
