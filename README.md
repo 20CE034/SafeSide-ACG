@@ -18,7 +18,9 @@ ACG Safe Side project Clone (in Testing)
 
 - Add more integrations
 
-- Plot Custom Graph for user entered values
+- Adding more parameters to predict college
+
+- Support JEE and Board based college fetching 
 
   
 ## Feedback
@@ -28,9 +30,14 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 
 ## Lessons
 
-- Mathematics is not easy.
+- Java is linkable with HTML, but it is probably not a good idea. (at least i know this now)
 
-- (Simplest Math problem no one can solve.)
+- On top of that Java is not directly linable but JavaScript helps linking , it can read escape sequence from Java and is able to print it on !DOCTYPE html.
+
+- Folder management and solving messed up things.
+
+- Creative ideas including many different computer languages
+- Using Padding(padding:;) is better than Margin (margin:;)
 
 
 ## References
