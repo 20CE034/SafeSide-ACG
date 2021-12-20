@@ -37,7 +37,10 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 - Folder management and solving messed up things.
 
 - Creative ideas including many different computer languages
+
 - Using Padding(padding:;) is better than Margin (margin:;)
+
+- Novelty and Familiarity principal [Link](https://m1a7x2y9.github.io/NF/)
 
 
 ## References
