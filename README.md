@@ -40,7 +40,7 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 
 - Using Padding(padding:;) is better than Margin (margin:;)
 
-- Novelty and Familiarity principal [Link](https://m1a7x2y9.github.io/NF/)
+- followed by NaF principal [Link](https://m1a7x2y9.github.io/NF/)
 
 
 ## References
