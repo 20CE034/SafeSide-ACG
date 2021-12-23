@@ -40,7 +40,7 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 
 - Using Padding(padding:;) is better than Margin (margin:;)
 
-- followed by [NaF](https://m1a7x2y9.github.io/NF/) principal 
+- [NaF](https://m1a7x2y9.github.io/NF/) approach 
 
 
 ## References
