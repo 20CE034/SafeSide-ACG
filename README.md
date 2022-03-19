@@ -6,10 +6,10 @@ ACG Safe Side project Clone (in Testing)
 
 # Link to site 
 
-[Click Here](https://20ce034.github.io/SafeSide-ACG/index.html)
+[Click Here](https://20ce034.github.io/ACG/)
 
 
-[Click Here - Without Login](https://20ce034.github.io/SafeSide-ACG/Secondpage/SecPage.html)
+[Click Here - Without Login](https://20ce034.github.io/ACG/Secondpage/SecPage.html)
 
 
 ## 🚀 Roadmap
