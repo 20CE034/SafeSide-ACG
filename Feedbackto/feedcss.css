@@ -693,8 +693,10 @@ abbr[title] {
   }
 
   .bak{
-    background-image: url(../Images/Feedimg.jpg);
-    
+    background-image: linear-gradient(to right,  rgb(114, 221, 14),rgba(90, 160, 81, 0.493));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-size:1575px 1700px ;
   }
 
   .glink{
@@ -716,4 +718,9 @@ abbr[title] {
   padding-left: 400px;
   background-color: #ffffff00;
   border: 1px solid rgba(0, 0, 0, 0);
+}
+
+.gform{
+  float: center;
+  /* margin-top: 10px; */
 }
