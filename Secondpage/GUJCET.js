@@ -4,7 +4,7 @@
           run.addEventListener("click", function (e) {
             
             e.preventDefault();
-            
+         
             var stdin = document.getElementById("stdin");
             var form = document.getElementById("form");
             var credits = document.getElementById("credits");
@@ -22,7 +22,7 @@
           if(selectedbranch=="IT"&&stdin.value.length!=0)
           {
             branch_dis.innerText="I.T.";
-            console.log("I.T.");
+            console.log("%cI.T.","color: yellow; font-style: italic; background-color: blue;padding: 2px");
             output.innerHTML = "Loading...";
             
             console.log(stdin.value);
@@ -54,7 +54,8 @@
             .then(data => {
               console.log(data);
               var outputStr = data.output;
-              console.log(outputStr);
+              console.table(outputStr);
+              // console.table(outputStr);
               var formattedOutput = outputStr.replace(/(?:\r\n|\r|\n)/g, '<br>');
               output.innerHTML = formattedOutput;
             })

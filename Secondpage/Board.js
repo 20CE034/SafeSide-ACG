@@ -3,11 +3,7 @@ var board_title=document.getElementById("titleboard")
 function boardo(){
   var input1=document.getElementById('board')
   var resu=document.getElementById('outputboard')
-  // if(input1.value==0)
-  // {
-  //       alert("Enter Valid input.");  	
-  // }
-  // else{  
+
         if(input1.value>=140 &&input1.value>0&&input1.value<301){
           board_title.innerText="Your Board Marks is/are :";
           resu.innerText=Number(input1.value);
