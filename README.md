@@ -60,10 +60,11 @@ If you have any feedback, please reach out to me at exlphy@gmail.com
 
 ## Authors
 
-- [@Plushb9rry](https://github.com/Plushb9rry)
+- [@20CE034](https://github.com/20CE034)
 - [@vatsaldoshi2412](https://github.com/vatsaldoshi2412)
 - [@Suryadeep02](https://github.com/Suryadeep02)
 - [@helloharshil](https://github.com/helloharshil)
+- [@dakshgohil22](https://github.com/dakshgohil22)
 
 
 
